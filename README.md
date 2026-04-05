@@ -55,15 +55,22 @@ cd $THISREPO
 ```
 
 #### 3.2. Run project
+Option A: GUI 
 1. Open _vacuum_search.py_ file (Make sure you are in the repository directory)
 2. (opitonal) Select an algorithm
 3. Click the run button
+
+Option B: Command Line
+```bash
+python vacuum_search.py -s <searchAlgorithm> -c <costFunction> -r <heuristic>
+```
 
 
 
 <a name="features"></a>
 
 ## 4. Features
+#### searchAlgorithm
 This Pathfinding Agent supports five different algorithms:
 - BFS: Breadth-First Search
 - DFS: Depth-First Search
@@ -71,3 +78,14 @@ This Pathfinding Agent supports five different algorithms:
 - Greedy: Manhattan distance
 - A*: A star search
 
+#### costFunction
+Determines movement cost policy:
+- Step
+- StepTurn
+- StayLeft
+- StayUp
+
+#### heuristic
+Only used for Greedy / A* algorithms
+- Manhattan
+- Euclid
