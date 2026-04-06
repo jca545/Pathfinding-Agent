@@ -34,7 +34,7 @@ This project requires using Python and the following Python libraries are used:
 - pygame
 - numpy
 
-You can install the required libraries using the following command::
+You can install the required libraries using the following command:
 ```bash
 pip install pygame numpy
 ```
